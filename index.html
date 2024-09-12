@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Apple Music</title>
+    <script>
+      function btn_pause() {
+        var click = document.getElementById('pause');
+        if (click.src.match('24')) {
+          click.src = './images/icons8-재생-버튼-50.png';
+          document.getElementById('video_obj').pause();
+        } else {
+          click.src = './images/icons8-중지-24.png';
+          document.getElementById('video_obj').play();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-list">
+        <a href="#" class="nav-li nav-logo"
+          ><img src="./images/logo.png" alt="nav-logo-img"
+        /></a>
+        <a href="#" class="nav-li">스토어</a>
+        <a href="#" class="nav-li">Mac</a>
+        <a href="#" class="nav-li">ipad</a>
+        <a href="#" class="nav-li">iphone</a>
+        <a href="#" class="nav-li">Watch</a>
+        <a href="#" class="nav-li">AirPods</a>
+        <a href="#" class="nav-li">TV 및 홈</a>
+        <a href="#" class="nav-li">엔터테인먼트</a>
+        <a href="#" class="nav-li">액세서리</a>
+        <a href="#" class="nav-li">고객지원</a>
+      </div>
+    </nav>
+
+    <div class="header-sticky">
+      <p>Apple Music</p>
+      <div class="header-sticky-btn">
+        <button type="button">무료 체험하기*</button>
+      </div>
+    </div>
+    <div class="header-banner">
+      <p>
+        지금부터 한정된 기간 동안, Apple Music 3개월 무료 이용 혜택을 누릴 수
+        있습니다.*
+        <a href="#">무료 체험 시작하기</a>
+      </p>
+    </div>
+
+    <main>
+      <div class="bg-video">
+        <video
+          class="bg-video__content"
+          src="images/main-video1.mp4"
+          autoplay
+          muted
+          loop
+          id="video_obj"
+        ></video>
+
+        <div class="video-letters">
+          <div class="video-letters-animate">
+            <div class="title-scale"><img src="./images/apple.png" />Music</div>
+            <div class="title-reveal">
+              <p class="reveal1">음악을 사랑하는 <br /></p>
+              <p class="reveal2">마음 그대로.</p>
+            </div>
+            <p class="info-fadeIn">
+              언제나 광고 없이 즐기는 1억 곡 이상의 음악. 한 차원 높은 음질을
+              선사하는<br />
+              공간 음향 및 무손실 오디오. 무대 위 가수가 된 듯한 기분을 느끼게
+              해주는<br />
+              Apple Music Sing. 독점 인터뷰와 라이브 콘서트. 그리고
+              온라인에서든<br />
+              오프라인에서든, 당신의 모든 기기에서 즐기는 자유까지.<br />
+              여기 음악 애호가를 위한 진정한 '음악' 앱을 소개합니다.
+            </p>
+            <a href="#"
+              ><button type="button" class="info-fadeIn-btn">
+                무료 체험하기*
+              </button></a
+            >
+            <div class="video-letters-bottom">
+              <span class="vlb-left">
+                <p class="vlb-title">
+                  신규 구독자는<br />
+                  3개월 무료
+                </p>
+                <p>
+                  신규 구독자는 Apple Music<br />
+                  3개월 무료 이용 후 <br />
+                  월 8,900원의 요금 결제.<br /><br />
+                  <button type="button" class="vlb-btn-left">
+                    무료체험하기*
+                  </button>
+                </p>
+              </span>
+              <span class="vlb-right">
+                <p class="vlb-title">
+                  Apple One 구독 시<br />
+                  1개월 무료
+                </p>
+                <p>
+                  Apple Music을 3가지 다른 훌륭한 <br />
+                  서비스들과 묶어 하나의 저렴한<br />
+                  월간 요금제로 이용.<br /><br />
+                  <button type="button" class="vlb-btn-right">
+                    Apple One 무료 체험하기
+                  </button>
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-btn">
+          <button
+            type="button"
+            class="main-video-btn-pause"
+            onclick="video_pause() "
+          >
+            <img
+              src="./images/icons8-중지-24.png"
+              alt="main-pause-icon"
+              id="pause"
+              onclick="btn_pause()"
+            />
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
