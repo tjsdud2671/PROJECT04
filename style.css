@@ -1,13 +1,18 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 html {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 10px;
+  height: 100vh;
 }
-
+body {
+  height: 100vh;
+  min-height: 100vh;
+}
 /*header*/
 .nav-list {
   display: flex;
@@ -84,7 +89,7 @@ main {
 }
 .bg-video {
   width: 100%;
-  height: 100vh;
+  height: 1250px;
 }
 
 .bg-video__content {
@@ -189,6 +194,67 @@ main {
   height: 40px;
   font-size: 1.6rem;
   font-weight: 700;
+}
+
+.main-card1,
+.card1-overset {
+  position: relative;
+}
+.card1-overset {
+  display: none;
+  background-color: lightgray;
+  width: 1280px;
+  height: 700px;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.main-card1 img {
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 60px;
+}
+.card1-overset img {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  width: 400px;
+}
+.card1-sm-title {
+  font-size: 3rem;
+  opacity: 0.7;
+}
+.card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  text-align: center;
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 700;
+}
+.card-info-overset {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -50%);
+  font-size: 1.6rem;
+}
+.card-btn {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(194, 186, 186, 0.61);
+  background-image: url('./images/plus.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -200px;
+  right: -350px;
 }
 
 @keyframes scale {
