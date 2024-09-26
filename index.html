@@ -11,26 +11,6 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <title>Apple Music</title>
-    <script>
-      function btn_pause() {
-        var click = document.getElementById('pause');
-        if (click.src.match('24')) {
-          click.src = './images/icons8-재생-버튼-50.png';
-          document.getElementById('video_obj').pause();
-        } else {
-          click.src = './images/icons8-중지-24.png';
-          document.getElementById('video_obj').play();
-        }
-      }
-
-      function change() {
-        var card = document.getElementById('card1');
-        var cardOverset = document.getElementById('card1-overset');
-        card.style.display = 'none';
-        cardOverset.style.display = 'block';
-      }
-      document.getElementById('card_btn').addEventListener('click', change);
-    </script>
   </head>
   <body>
     <nav>
@@ -156,19 +136,62 @@
           src="./images/boc_spatial_audio__di7hdk4tooqe_large-removebg-preview.png"
         />
         <div class="card-info-overset">
-          <p>
-            앱에 내장된 기본 기능들로 새로운 차원의 음악을 경험할 수
-            있습니다.<br />
-            음악을 감상할 때 온몸을 휘감는 듯한 몰입감 넘치는 사운드를
-            선사하는<br />
-            Dolby Atmos 지원 공간 음향. 그리고 오리지널 레코딩의 디테일을<br />
-            고스란히 전해주는 무손실 오디오. 이 두 가지 기능이 선사하는
-            놀라운<br />
-            사운드로 늘 뛰어난 청취 경험을 누릴 수 있죠.
-          </p>
-          <div class="card-btn"></div>
+          <div>
+            <p>
+              앱에 내장된 기본 기능들로 새로운 차원의 음악을 경험할 수
+              있습니다.<br />
+              음악을 감상할 때 온몸을 휘감는 듯한 몰입감 넘치는 사운드를
+              선사하는<br />
+              <span>Dolby Atmos 지원 공간 음향.</span> 그리고 오리지널 레코딩의
+              디테일을<br />
+              고스란히 전해주는 <span>무손실 오디오.</span> 이 두 가지 기능이
+              선사하는 놀라운<br />
+              사운드로 늘 뛰어난 청취 경험을 누릴 수 있죠.
+            </p>
+          </div>
+          <div
+            class="card-btn-overset"
+            id="card-btn-overset"
+            onclick="cardReturn()"
+          ></div>
         </div>
       </div>
+      <div class="main-card2" id="card2">
+        <img src="./images/shared_listening__cc1u7k4ayub6_large.jpg" />
+        <div class="card-title2">
+          <p class="card2-sm-title">공유듣기</p>
+          <p>우정에 어울리는<br />사운드트랙.</p>
+          <div class="card-btn" id="card-btn" onclick="change()"></div>
+        </div>
+      </div>
+      <div class="main-card3" id="card3">
+        <img src="./images/classical__ervsgfavr48y_large.jpg" />
+        <div class="card-title3">
+          <p class="card3-sm-title">Apple Music Classical</p>
+          <p>클래식 음악 앱의<br />절대 강자.</p>
+          <div class="card-btn" id="card-btn" onclick="change()"></div>
+        </div>
+      </div>
+      <section class="section-devices">
+        <div class="device-list-top">
+          <h2>
+            Apple Music은 가지고 있는<br />모든 기기에서 즐길 수 있습니다.
+          </h2>
+          <div>
+            <img src="./images/device_iphone__c8l6gyaxoiky_large.png" />
+            <img src="./images/device_ipad__b35rz25rqw5e_large.png" />
+            <img src="./images/device_watch__zd008kipz5ue_large.png" />
+            <img src="./images/device_mac__ey9e548c6h0m_large.png" />
+          </div>
+          <div class="device-list-bottom">
+            <img src="./images/device_apple_tv__fiq9031plquu_large.png" />
+            <img src="./images/device_carplay__ck175sp3s1le_large.png" />
+            <img src="./images/device_android__30ewuplq7wy6_large.png" />
+            <img src="./images/device_pc__epdb7iaktzqu_large.png" />
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>

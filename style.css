@@ -7,11 +7,10 @@
 html {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 10px;
-  height: 100vh;
 }
 body {
-  height: 100vh;
-  min-height: 100vh;
+  width: 100vw;
+  height: 5000px;
 }
 /*header*/
 .nav-list {
@@ -143,7 +142,7 @@ main {
   animation: reveal 0.5s forwards 2.5s;
 }
 .info-fadeIn {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.7);
   opacity: 0;
   animation: fadeIn 2s forwards 3s;
@@ -197,19 +196,37 @@ main {
 }
 
 .main-card1,
+.main-card2,
+.main-card3,
 .card1-overset {
   position: relative;
 }
-.card1-overset {
-  display: none;
-  background-color: lightgray;
+
+.main-card2 {
+  background-color: #f5f5f7;
   width: 1280px;
   height: 700px;
   border-radius: 30px;
   margin: 0 auto;
+  margin-top: 40px;
+}
+.main-card2 img {
+  padding: 50px;
 }
 
-.main-card1 img {
+.card1-overset {
+  display: none;
+  background-color: rgb(245, 236, 236);
+  width: 1280px;
+  height: 700px;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 40px;
+  animation: fadeIn forwards ease-in-out 1s;
+}
+
+.main-card1 img,
+.main-card3 img {
   display: block;
   margin: 0 auto;
   padding: 30px;
@@ -225,7 +242,8 @@ main {
   font-size: 3rem;
   opacity: 0.7;
 }
-.card-title {
+.card-title,
+.card-title3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -236,12 +254,24 @@ main {
   font-size: 7rem;
   font-weight: 700;
 }
+.card-title2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
 .card-info-overset {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-90%, -50%);
-  font-size: 1.6rem;
+  font-size: 1.7rem;
+  color: #86868b;
+  font-weight: 700;
+}
+.card-info-overset span {
+  color: #fa243c;
 }
 .card-btn {
   border: none;
@@ -255,8 +285,23 @@ main {
   position: absolute;
   bottom: -200px;
   right: -350px;
+  transition: 0.5s;
 }
 
+.card-btn-overset {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(194, 186, 186, 0.61);
+  background-image: url('./images/plus.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -250px;
+  right: -540px;
+  transition: 1s;
+}
 @keyframes scale {
   0% {
     transform: scale(4);
