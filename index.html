@@ -109,18 +109,20 @@
           </div>
         </div>
         <div class="video-btn">
-          <button
-            type="button"
-            class="main-video-btn-pause"
-            onclick="video_pause() "
-          >
-            <img
-              src="./images/icons8-중지-24.png"
-              alt="main-pause-icon"
-              id="pause"
-              onclick="btn_pause()"
-            />
-          </button>
+          <div class="video-btn-position">
+            <button
+              type="button"
+              class="main-video-btn-pause"
+              onclick="video_pause() "
+            >
+              <img
+                src="./images/icons8-중지-24.png"
+                alt="main-pause-icon"
+                id="pause"
+                onclick="btn_pause()"
+              />
+            </button>
+          </div>
         </div>
       </div>
       <div class="main-card1" id="card1">
@@ -172,22 +174,61 @@
           <div class="card-btn" id="card-btn" onclick="change()"></div>
         </div>
       </div>
+
       <section class="section-devices">
         <div class="device-list-top">
           <h2>
             Apple Music은 가지고 있는<br />모든 기기에서 즐길 수 있습니다.
           </h2>
-          <div>
-            <img src="./images/device_iphone__c8l6gyaxoiky_large.png" />
-            <img src="./images/device_ipad__b35rz25rqw5e_large.png" />
-            <img src="./images/device_watch__zd008kipz5ue_large.png" />
-            <img src="./images/device_mac__ey9e548c6h0m_large.png" />
+          <div class="device-list-group">
+            <div class="device-icon-ul">
+              <li>
+                <img src="./images/device_iphone__c8l6gyaxoiky_large.png" />
+              </li>
+              <li>
+                <img src="./images/device_ipad__b35rz25rqw5e_large.png" />
+              </li>
+              <li>
+                <img src="./images/device_watch__zd008kipz5ue_large.png" />
+              </li>
+              <li><img src="./images/device_mac__ey9e548c6h0m_large.png" /></li>
+            </div>
+            <div class="device-name-ul">
+              <li>iphone</li>
+              <li>ipad</li>
+              <li>Apple Watch</li>
+              <li>Mac</li>
+            </div>
           </div>
+
           <div class="device-list-bottom">
-            <img src="./images/device_apple_tv__fiq9031plquu_large.png" />
-            <img src="./images/device_carplay__ck175sp3s1le_large.png" />
-            <img src="./images/device_android__30ewuplq7wy6_large.png" />
-            <img src="./images/device_pc__epdb7iaktzqu_large.png" />
+            <div class="device-list-group">
+              <div class="device-icon-ul">
+                <li>
+                  <img src="./images/device_apple_tv__fiq9031plquu_large.png" />
+                </li>
+                <li>
+                  <img src="./images/device_carplay__ck175sp3s1le_large.png" />
+                </li>
+                <li>
+                  <img src="./images/device_android__30ewuplq7wy6_large.png" />
+                </li>
+                <li>
+                  <img src="./images/device_pc__epdb7iaktzqu_large.png" />
+                </li>
+              </div>
+              <div class="device-name-ul_2">
+                <li>Apple Tv</li>
+                <li>Car Play</li>
+                <li>안드로이드</li>
+                <li>PC</li>
+              </div>
+              <div class="device-link-ul">
+                <li>호환되는 차량 찾기 ></li>
+                <li>Google Play에서<br />다운로드하기</li>
+                <li>Microsoft Stroe에서<br />다운로드하기</li>
+              </div>
+            </div>
           </div>
         </div>
       </section>

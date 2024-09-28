@@ -1,12 +1,12 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 
 html {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 10px;
+  width: 100vw;
 }
 body {
   width: 100vw;
@@ -83,7 +83,6 @@ body {
 
 /*main*/
 main {
-  width: 100vw;
   height: 100vh;
 }
 .bg-video {
@@ -100,9 +99,10 @@ main {
 .video-btn {
   z-index: 1000;
   position: sticky;
-  bottom: -10%;
+  bottom: 5px;
   left: 50%;
-  transform: translate(95%, -100px);
+  transform: translate(-80px, -60px);
+  text-align: right;
 }
 .main-video-btn-pause,
 .main-video-btn-start {
@@ -328,4 +328,58 @@ main {
   100% {
     opacity: 1;
   }
+}
+
+.section-devices {
+  text-align: center;
+  padding: 50px;
+}
+.device-list-top {
+  font-size: 4rem;
+}
+.device-list-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.device-icon-ul {
+  list-style: none;
+  display: flex;
+}
+
+.device-list-top img {
+  padding: 50px 80px 10px 0;
+}
+.device-name-ul,
+.device-name-ul_2 {
+  font-size: 2rem;
+  font-weight: 700;
+  list-style: none;
+  display: flex;
+}
+
+.device-name-ul li {
+  margin-right: 100px;
+}
+.device-name-ul_2 li {
+  margin-right: 110px;
+}
+
+.device-name-ul li:nth-child(2) {
+  margin-left: 30px;
+}
+
+.device-link-ul {
+  font-size: 1.6rem;
+  color: #0066cc;
+  list-style: none;
+  display: flex;
+  padding: 10px 0 0 0;
+}
+
+.device-link-ul li {
+  margin-right: 60px;
+}
+.device-link-ul li:nth-child(1) {
+  margin-left: 180px;
 }
