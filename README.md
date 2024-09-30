@@ -48,7 +48,10 @@ position: sticky 부모 태그의 크기를 기준으로 절대 위치를 지정
 ## 슬라이드
 
 
+
 ![bandicam2024-09-3015-48-37-036-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/3b6cf20c-dfdb-4451-9891-67da51f72c79)<br/><br/>
+![슬라이드](https://github.com/user-attachments/assets/503db158-ac6c-4de2-b8c7-f1daefca252e)<br/>
+![슬라이드 btn](https://github.com/user-attachments/assets/e73b2bbe-93d3-4553-b4f6-e5945a073a0f)<br/>
 제이쿼리를 사용하여 슬라이드가 열렸다 닫혔다 반복하도록 하였다.<br/>
 슬라이드 아이콘을 누르면 슬라이드가 펼쳐짐과 동시에 아이콘이 위로 향하게 바뀌고<br/>
 다시 아이콘을 누르면 아이콘이 아래 방향으로 변경되게 하였다.
@@ -59,6 +62,7 @@ position: sticky 부모 태그의 크기를 기준으로 절대 위치를 지정
 
 ## 카드 버튼 회전 효과
 ![bandicam2024-09-3015-14-50-143-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2a350706-c5f5-442d-905e-84e62d052552)<br/><br/>
+![토글](https://github.com/user-attachments/assets/04a343ce-57cb-4beb-87af-436f82e11ab3)<br/>
 버튼을 누르면 + 모양의 버튼이 45도 회전하여 X표시가 되도록 하였고<br/>
 다시 버튼을 누르면 원상복구 시키도록 하였다.<br/>
 회전 애니메이션을 적용하여 부드럽게 회전하도록 했다.
