@@ -14,7 +14,10 @@ https://rawcdn.githack.com/tjsdud2671/PROJECT04/5dd81f399ca4199dcdb2db2b42aa4a57
 
 
 
-### sticky 속성
+## sticky 속성
+
+![bandicam2024-09-3015-48-12-428-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/0af7db64-7ea7-4b49-a168-6d48599af46f)<br/><br/>
+
 nav 일부 영역이 스크롤 시에도 계속 고정되도록 sticky 속성을 사용하였다.<br/>
 화면을 고정하는 방법에는 Fixed 속성과 Sticky 속성이 있는데 간략한 차이는 아래와 같다.<br/>
 
