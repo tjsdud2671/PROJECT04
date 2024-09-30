@@ -63,9 +63,19 @@ position: sticky 부모 태그의 크기를 기준으로 절대 위치를 지정
 ## 카드 버튼 회전 효과
 ![bandicam2024-09-3015-14-50-143-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2a350706-c5f5-442d-905e-84e62d052552)<br/><br/>
 ![토글](https://github.com/user-attachments/assets/04a343ce-57cb-4beb-87af-436f82e11ab3)<br/>
-버튼을 누르면 + 모양의 버튼이 45도 회전하여 X표시가 되도록 하였고<br/>
-다시 버튼을 누르면 원상복구 시키도록 하였다.<br/>
-회전 애니메이션을 적용하여 부드럽게 회전하도록 했다.
+
+버튼을 클릭했을 때 카드의 상태가 변화하는 애니메이션을 구현하였다.<br/>
+클릭을 통해 카드의 상태를 변경하고 다시 원상태로 돌릴 수 있도록 구성되었다.<br/>
+
++ card1 : 카드의 첫 번째 상태를 나타냄
++ card1-overset : 카드가 뒤집힌 상태
++ card-btn : 카드를 변경하는 버튼
++ card-btn-overset : 카드가 뒤집힌 상태에서 카드를 원상태로 돌리는 버튼
+
+#### change()함수
+card-btn을 클릭했을 때 호출되는 함수. 카드와 버튼의 상태를 바꾸는 동작을 함<br/>
+
++ isRotated 변수 : 버튼이 회전했는지를 저장하는 변수이다.
 
 <br/>
 <br/>
