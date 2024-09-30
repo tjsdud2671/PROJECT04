@@ -37,6 +37,7 @@ position: sticky 부모 태그의 크기를 기준으로 절대 위치를 지정
 ## 비디오 재생
 
 ![bandicam2024-09-3015-12-30-109-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2b542b08-30de-4290-aec0-633a921ed2a0)<br/><br/>
+![video btn](https://github.com/user-attachments/assets/4a05f985-a0e5-4094-bbc9-2bda61875b00)<br/><br/>
 비디오 중지 버튼을 누르면 비디오가 중지됨과 동시에 아이콘이 재생 버튼으로 변경되게 하였다.<br/>
 다시 재생 아이콘을 누르면 비디오가 재생이 된다.
 
