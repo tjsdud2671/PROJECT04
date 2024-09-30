@@ -55,3 +55,18 @@ function cardReturn() {
 document
   .getElementById('card-btn-overset')
   .addEventListener('click', cardReturn);
+
+$(document).ready(function () {
+  $('#flip').click(function () {
+    $('#panel').slideToggle('slow');
+  });
+});
+
+function question() {
+  var click = document.getElementById('question');
+  if (click.src.match('748063')) {
+    click.src = './images/free-icon-up-arrow-3385656.png';
+  } else {
+    click.src = './images/free-icon-down-arrow-748063.png';
+  }
+}
